@@ -56,7 +56,6 @@ _These should be compliant with any Text Completion/Chat Completion backends suc
 
 ## Acknowledgement
 
--   [Vali-98] (https://github.com/Vali-98/ChatterUI) - the original UI creator
-ChatterUI
+-   https://github.com/Vali-98/ChatterUI - the original ChatterUI
 -   [llama.cpp](https://github.com/ggerganov/llama.cpp) - the underlying engine to run LLMs
 -   [llama.rn](https://github.com/mybigday/llama.rn) - the original react-native llama.cpp adapter
