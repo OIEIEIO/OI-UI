@@ -33,7 +33,7 @@ const About = () => {
             <TouchableOpacity activeOpacity={0.8} onPress={updateCounter}>
                 <Image source={require('../assets/images/icon.png')} style={styles.icon} />
             </TouchableOpacity>
-            <Text style={styles.titleText}>ChatterUI</Text>
+            <Text style={styles.titleText}>OI-UI</Text>
             <Text style={styles.subtitleText}>
                 Version {version} {devMode && '[DEV MODE]'}
             </Text>
@@ -52,26 +52,30 @@ const About = () => {
                     <Text style={styles.supportText}>Disable Dev Mode</Text>
                 </TouchableOpacity>
             )}
+            
             <Text style={styles.body}>
-                ChatterUI is a free and open-source application developed by Vali98
+                OI-UI is an innovative AI-powered application designed to bring advanced machine learning capabilities to your fingertips. 
             </Text>
             <Text style={{ marginBottom: 20, ...styles.body }}>
-                This app is a passion project I develop in my free time. If you're enjoying the app,
-                consider supporting its development!
+                Built with cutting-edge technology, OI-UI seamlessly integrates AI-driven solutions, allowing users to experience intelligent automation, data analysis, and personalized interactions like never before.
             </Text>
-            <Text style={{ ...styles.body, marginBottom: 8 }}>Donate to ChatterUI here:</Text>
-            <SupportButton />
-            <Text style={styles.body}>Got an issue? Report it here:</Text>
 
-            <Text style={styles.subtitleText}>(Don't forget to add your Logs!)</Text>
+            <Text style={styles.body}>
+                Whether you're an AI enthusiast, developer, or business professional, OI-UI provides the tools you need to harness the power of artificial intelligence for enhanced productivity and smarter decision-making.
+            </Text>
+
+            <Text style={styles.body}>Have feedback or questions? Reach out here:</Text>
+
+            <Text style={styles.subtitleText}>(Don't forget to include your logs!)</Text>
             <TouchableOpacity
                 onPress={() => {
-                    Linking.openURL('https://github.com/Vali-98/ChatterUI')
+                    Linking.openURL('https://github.com/OIEIEIO/OI-UI')
                 }}
                 style={styles.supportButton}>
-                <Text style={styles.supportText}>Github Repository</Text>
-                <FontAwesome name="github" size={20} color={Style.getColor('primary-text1')} />
+            <Text style={styles.supportText}>Visit Our Support Page</Text>
+            <FontAwesome name="github" size={20} color={Style.getColor('primary-text1')} />
             </TouchableOpacity>
+
         </View>
     )
 }

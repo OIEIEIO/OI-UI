@@ -2,27 +2,27 @@ const IS_DEV = process.env.APP_VARIANT === 'development'
 
 module.exports = {
     expo: {
-        name: IS_DEV ? 'ChatterUI (DEV)' : 'ChatterUI',
+        name: IS_DEV ? 'OI-UI (DEV)' : 'OI-UI',
         newArchEnabled: true,
-        slug: 'ChatterUI',
-        version: '0.8.4',
+        slug: 'OI-UI',
+        version: '0.8.6',
         orientation: 'default',
         icon: './assets/images/icon.png',
-        scheme: 'chatterui',
+        scheme: 'oiui',
         userInterfaceStyle: 'automatic',
         assetBundlePatterns: ['**/*'],
         ios: {
             supportsTablet: true,
-            package: IS_DEV ? 'com.Vali98.ChatterUIDev' : 'com.Vali98.ChatterUI',
+            package: IS_DEV ? 'com.OIEIEIO.OIUIDev' : 'com.OIEIEIO.OIUI',
         },
         android: {
             adaptiveIcon: {
                 foregroundImage: './assets/images/adaptive-icon-foreground.png',
-                backgroundImage: './assets/images//adaptive-icon-background.png',
+                backgroundImage: './assets/images/adaptive-icon-background.png',
                 monochromeImage: './assets/images/adaptive-icon-foreground.png',
                 backgroundColor: '#000',
             },
-            package: IS_DEV ? 'com.Vali98.ChatterUIDev' : 'com.Vali98.ChatterUI',
+            package: IS_DEV ? 'com.OIEIEIO.OIUIDev' : 'com.OIEIEIO.OIUI',
             userInterfaceStyle: 'dark',
             permissions: [
                 'android.permission.FOREGROUND_SERVICE',
@@ -85,7 +85,7 @@ module.exports = {
                 origin: false,
             },
             eas: {
-                projectId: 'd588a96a-5eb0-457a-85bc-e21acfdc60e9',
+                projectId: '5d32aa86-6dbb-4f2e-9abf-362f28e1be55',
             },
         },
     },

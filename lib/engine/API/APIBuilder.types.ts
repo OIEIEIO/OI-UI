@@ -1,6 +1,6 @@
 import { APISampler } from '@lib/engine/APILegacy/BaseAPI'
 
-// These are for ChatterUI's interface
+// These are for OI-UI's interface
 // When a user wishes to add new 'X' API, we can control which fields remain default, and which can be edited
 export interface UISettings {
     editableCompletionPath: boolean
@@ -8,7 +8,7 @@ export interface UISettings {
     selectableModel: boolean
 }
 
-// These are the actual values being stored by ChatterUI
+// These are the actual values being stored by OI-UI
 export interface APIValues {
     endpoint: string
     modelEndpoint: string

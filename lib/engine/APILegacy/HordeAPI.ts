@@ -8,7 +8,7 @@ import { APIBase, APISampler } from './BaseAPI'
 
 export const hordeHeader = () => {
     return {
-        'Client-Agent': `ChatterUI:${nativeApplicationVersion}:https://github.com/Vali-98/ChatterUI`,
+        'Client-Agent': `OI-UI:${nativeApplicationVersion}:https://github.com/OIEIEIO/OI-UI`,
     }
 }
 

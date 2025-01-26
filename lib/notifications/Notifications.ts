@@ -4,8 +4,8 @@ import { Platform } from 'react-native'
 
 export async function registerForPushNotificationsAsync() {
     if (Platform.OS === 'android') {
-        await Notifications.setNotificationChannelAsync('chatterUI', {
-            name: 'chatterUI',
+        await Notifications.setNotificationChannelAsync('OI-UI', {
+            name: 'OI-UI',
             importance: Notifications.AndroidImportance.DEFAULT,
             vibrationPattern: [250, 0, 250, 250],
             lightColor: '#FF231F7C',

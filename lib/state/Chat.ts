@@ -92,7 +92,7 @@ export const sendGenerateCompleteNotification = async () => {
 
     const notificationText = showMessage
         ? Chats.useChatState.getState().buffer.trim()
-        : 'ChatterUI has finished a response.'
+        : 'OI-UI has finished a response.'
 
     Notifications.setNotificationHandler({
         handleNotification: async () => ({

@@ -44,7 +44,7 @@ const ModelNewMenu: React.FC<ModelNewMenuProps> = ({ modelImporting, setModelImp
                 disabled={modelImporting}
                 options={[
                     {
-                        label: 'Copy Model Into ChatterUI',
+                        label: 'Copy Model Into OI-UI',
                         icon: 'download',
                         onPress: handleImportModel,
                     },

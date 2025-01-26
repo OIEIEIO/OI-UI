@@ -38,15 +38,15 @@ export const continueResponse = async (swipeId: number) => {
 }
 
 const completionTaskOptions = {
-    taskName: 'chatterui_completion_task',
+    taskName: 'oiui_completion_task',
     taskTitle: 'Running completion...',
-    taskDesc: 'ChatterUI is running a completion task',
+    taskDesc: 'OI-UI is running a completion task',
     taskIcon: {
         name: 'ic_launcher',
         type: 'mipmap',
     },
     color: '#403737',
-    linkingURI: 'chatterui://',
+    linkingURI: 'oiui://',
     progressBar: {
         max: 1,
         value: 0,

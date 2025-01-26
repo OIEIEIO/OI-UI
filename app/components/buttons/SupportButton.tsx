@@ -7,10 +7,10 @@ const SupportButton = () => {
     return (
         <TouchableOpacity
             onPress={() => {
-                Linking.openURL('https://ko-fi.com/vali98')
+                Linking.openURL('https://oieieio.ca')
             }}
             style={styles.supportButton}>
-            <Text style={styles.supportText}>Support ChatterUI</Text>
+            <Text style={styles.supportText}>Support OI-UI</Text>
             <FontAwesome name="coffee" size={16} color={Style.getColor('primary-text1')} />
         </TouchableOpacity>
     )

@@ -746,7 +746,7 @@ export namespace Characters {
 }
 
 export type CharacterCardV2Data = {
-    // field for chatterUI
+    // field for OI-UI
     image_id: number
 
     name: string
@@ -761,7 +761,7 @@ export type CharacterCardV2Data = {
     system_prompt: string
     post_history_instructions: string
     alternate_greetings: string[]
-    //for ChatterUI this will be removed into its own table
+    //for OI-UI this will be removed into its own table
     //character_book: string
 
     // May 8th additions

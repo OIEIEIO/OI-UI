@@ -156,7 +156,7 @@ const hordeResponse = async (
             fetch(`${hordeURL}generate/text/status/${generation_id}`, {
                 method: 'DELETE',
                 headers: {
-                    'Client-Agent': `ChatterUI:${nativeApplicationVersion}:https://github.com/Vali-98/ChatterUI`,
+                    'Client-Agent': `OI-UI:${nativeApplicationVersion}:https://github.com/OIEIEIO/OI-UI`,
                     accept: 'application/json',
                     'Content-Type': 'application/json',
                 },
@@ -173,7 +173,7 @@ const hordeResponse = async (
         body: payload,
         headers: {
             ...header,
-            'Client-Agent': `ChatterUI:${nativeApplicationVersion}:https://github.com/Vali-98/ChatterUI`,
+            'Client-Agent': `OI-UI:${nativeApplicationVersion}:https://github.com/OIEIEIO/OI-UI`,
             accept: 'application/json',
             'content-type': 'application/json',
         },
@@ -205,7 +205,7 @@ const hordeResponse = async (
         const response = await fetch(`${hordeURL}generate/text/status/${generation_id}`, {
             method: 'GET',
             headers: {
-                'Client-Agent': `ChatterUI:${nativeApplicationVersion}:https://github.com/Vali-98/ChatterUI`,
+                'Client-Agent': `OI-UI:${nativeApplicationVersion}:https://github.com/OIEIEIO/OI-UI`,
                 accept: 'application/json',
                 'content-type': 'application/json',
             },
