@@ -5,7 +5,7 @@ module.exports = {
         name: IS_DEV ? 'OI-UI (DEV)' : 'OI-UI',
         newArchEnabled: true,
         slug: 'OI-UI',
-        version: '0.8.6',
+        version: '0.8.7',
         orientation: 'default',
         icon: './assets/images/icon.png',
         scheme: 'oiui',
