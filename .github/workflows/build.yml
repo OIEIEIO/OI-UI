@@ -1,20 +1,30 @@
-name: Build Workflow
+name: Simple Build Workflow
 
 on:
-    push:
-        branches:
-            - master
+  push:
+    branches:
+      - master
 
 jobs:
-    trigger-build:
-        runs-on: ubuntu-latest
-        steps:
-            - name: Connect Tailscale
-              uses: tailscale/github-action@v3
-              with:
-                  oauth-client-id: ${{secrets.TS_OAUTH_CLIENT_ID}}
-                  oauth-secret: ${{secrets.TS_OAUTH_SECRET}}
-                  tags: tag:chatterui-cd
+  trigger-build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
 
-            - name: Trigger Build
-              run: curl -X GET ${{secrets.TS_BUILD_API}}
+      - name: Setup Environment
+        run: echo "Starting build process..."
+
+      - name: Trigger Build
+        env:
+          BUILD_API_URL: ${{ secrets.TS_BUILD_API }}
+        run: |
+          if [ -z "$BUILD_API_URL" ]; then
+            echo "BUILD_API_URL secret is not set!"
+            exit 1
+          fi
+          curl -X GET "$BUILD_API_URL"
+
+      - name: Completion
+        run: echo "Build process completed."
+
