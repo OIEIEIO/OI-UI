@@ -4,6 +4,9 @@ OI-UI is a native mobile frontend for LLMs.
 
 Run LLMs on device or connect to various commercial or open source APIs. OI-UI aims to provide a mobile-friendly interface with fine-grained control over chat structuring.
 
+🤖 Open the below link on your Android devices to install the app.
+
+https://expo.dev/accounts/oieieio/projects/OI-UI/builds/8d04e539-88f8-4caf-a419-990c57d6a8c0
 
 Chat With Characters or Assistants
 
